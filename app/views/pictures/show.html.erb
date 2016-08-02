@@ -11,8 +11,7 @@
 </p>
 
 <p>
-  <strong>Url:</strong>
-  <%= image_tag @picture.url %>
+  <%= image_tag @picture.url, :size => "300x500" %>
 </p>
 
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
