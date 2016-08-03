@@ -1,6 +1,6 @@
 <div class="webcontainer">
 <h1>Meet Today's Football Superstar!</h1>
-<%= link_to 'Back', pictures_path %>
+
 <hr>
 <p id="notice"><%= notice %></p>
 <br>
@@ -18,7 +18,7 @@
   <%= image_tag @picture.url, :size => "300x500" %>
 </p>
 
-<%= link_to 'Edit', edit_picture_path(@picture) %> 
-
+<%= link_to 'Edit', edit_picture_path(@picture) %> |
+<%= link_to 'Back', pictures_path, :class => 'back' %>
 
 <div>
