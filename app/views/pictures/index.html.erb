@@ -1,9 +1,8 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Football Figures</h1>
+<div>
+    <h1>Football Figures</h1>
+</div>
 <hr>
-
-<%= button_to 'Upload a picture', new_picture_path, :method => "get" %> 
+<%= button_to 'Upload a picture', new_picture_path, :method => "get" %>
 
 <ul>
     <% @pictures.each do |picture| %>
