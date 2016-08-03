@@ -3,7 +3,7 @@
 <h1>Football Figures</h1>
 <hr>
 
-<%= link_to 'Upload a picture', new_picture_path %> 
+<%= button_to 'Upload a picture', new_picture_path, :method => "get" %> 
 
 <ul>
     <% @pictures.each do |picture| %>
