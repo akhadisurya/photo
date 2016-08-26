@@ -4,6 +4,9 @@
 <hr>
 <p id="notice"><%= notice %></p>
 <br>
+
+<%= link_to 'Edit', edit_picture_path(@picture) %> |
+<%= link_to 'Back', pictures_path, :class => 'back' %>
 <p>
   <strong>Name:</strong>
   <%= @picture.name %>
@@ -18,9 +21,12 @@
   <%= image_tag @picture.url, :size => "300x500" %>
 </p>
 
-<%= link_to 'Edit', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path, :class => 'back' %>
 
+
+
+<div class="footer">
+  &copy; Arvin Hadisurya
+</div>
 
 
 <div>
