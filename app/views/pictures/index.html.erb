@@ -5,7 +5,7 @@
 <%= button_to 'Upload a picture', new_picture_path, :method => "get" %>
 
 <%= form_tag(pictures_path, :method => "get", id: "search-form") do %>
-<%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Pictures" %>
 <%= submit_tag "Search" %>
 <% end %>
 

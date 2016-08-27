@@ -6,7 +6,8 @@
 <br>
 
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path, :class => 'back' %>
+<%= link_to 'Back', pictures_path, :class => 'back' %> |
+<%= link_to 'New Picture', new_picture_path %>
 <p>
   <strong>Name:</strong>
   <%= @picture.name %>
